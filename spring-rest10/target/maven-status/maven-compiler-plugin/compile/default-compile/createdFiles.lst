@@ -1,0 +1,4 @@
+com\verizon\config\SpringConfig.class
+com\verizon\controller\MyRestController$Employee.class
+com\verizon\controller\MyRestController.class
+com\verizon\config\MyWebAppInitializer.class

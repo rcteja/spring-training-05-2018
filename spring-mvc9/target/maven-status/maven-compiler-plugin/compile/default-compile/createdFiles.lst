@@ -1,0 +1,3 @@
+com\verizon\config\SpringConfig.class
+com\verizon\controller\LoginController.class
+com\verizon\config\MyWebAppInitializer.class

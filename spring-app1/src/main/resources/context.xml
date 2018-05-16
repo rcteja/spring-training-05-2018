@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean id="message"  class="com.verizon.bean.Message">
+	<property name="header" value="On Leave Today"/>
+	<property name="body" value="Due to some personal work in will be of today"/>
+</bean>
+
+<bean id="mail" class="com.verizon.bean.Mail">
+	<property name="fromAddress" value="ramcharan.teja@verizon.com"/>
+	<property name="toAddress" value="FLPS_DEV_VDSI"></property>
+	<property name="message" ref="message"/>
+</bean>
+</beans>
