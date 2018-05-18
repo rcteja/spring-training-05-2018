@@ -9,6 +9,7 @@ import java.util.Map;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -46,6 +47,19 @@ public class LoginController {
 			return ResponseEntity.ok(e);
 		}else{
 			return ResponseEntity.ok("Not found");
+		}
+		
+	}
+	
+	@RequestMapping(path="/employ" , method= RequestMethod.POST, produces={MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE}, consumes={MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
+	public ResponseEntity<Object> getById(@RequestBody Employee e){
+		
+		if(map.containsKey(e.getEmpId())){
+			System.out.println(e.getEmpId());
+			return ResponseEntity.ok("ALready exists");
+		}else{
+			map.put(e.getEmpId(), e);
+			return ResponseEntity.ok(map);
 		}
 		
 	}

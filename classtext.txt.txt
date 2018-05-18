@@ -1,0 +1,97 @@
+
+to check the bit code
+javap -v classname
+
+checksum to check the change in java
+
+proxy is used to hide the internal impl.
+
+call --> Proxy(Hiding ) --> Impl
+
+byte security impl bu checksum
+
+-->Proxy to class cg-lib
+
+-->Proxy by parent or interface ref.
+
+-->Cross cutting concerns when you are using same code in multiple places(AOP).
+
+Non -Spring
+Jointpoint
+1.Method-->Spring support
+2.object
+3.constructor
+
+Advice-->execution of code with method
+
+pointcuts-->identifying the method to apply the advice
+
+aspect-->advice+pointcut
+
+Runtime weaving(dynamic programming)-->In Spring 
+
+xml ->jaxb
+json -> jackson
+
+
+
+While creating the bean of impl class, then advice will be applied on the methods based on point cut<wild cards>.
+
+wildcards for pattern
+
+
+Templete Methis Pattern
+->common functionatlity into template
+->non common things into callback functions
+
+Spring impl -->Connection pool in Spring contianer
+
+Spring Datasource
+
+1. Single ds
+2. drivermgr ds
+
+
+JPA->Entity Manager 
+
+
+<PRG>-->Post redirect login
+
+Security;
+
+A,A, credential store(LDAP)
+
+Credential Store
+username/pw-->A
+role-->A
+
+Filter redirect to authentication 
+
+Princple
+A
+A
+
+
+Filter-->DelegatingFliterProxy
+
+req-->Authenprocfilter-->authen object-->authen mgr-->authen provider(validator of cred)-->
+
+actuator --> to get the details of the web apps dynamic info()
+
+
+
+MS:
+
+architectural sytle
+
+service registery-->eureka server
+create a project with eureka server acting as server
+
+load balancer-->Ribbon
+
+curcuit breaker-->Hystrix
+
+Api geateway-->zuul
+
+circuit breakers pattern
+

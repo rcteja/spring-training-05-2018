@@ -1,0 +1,5 @@
+com\verizon\config\security\SecurityInit.class
+com\verizon\controller\LoginController.class
+com\verizon\config\SpringConfig.class
+com\verizon\config\security\SecurityConfiguration.class
+com\verizon\config\MyWebAppInitializer.class
